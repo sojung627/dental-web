@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/00_drop.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/01_schema_employee.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/02_schema_patient.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/03_schema_appointment.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/04_schema_treatment.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/05_schema_chart.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/06_schema_insurance.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/07_schema_payment.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/11_data_emloyee.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/12_data_patient.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/13_data_appointment.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/14_data_treatment.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/15_data_chart.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/16_data_insurance.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/SQL/17_data_payment.sql" dialect="GenericSQL" />
+  </component>
+</project>

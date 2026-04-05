@@ -1,0 +1,37 @@
+spring:
+  # DB 연결 설정
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dental
+    username: postgres
+    password: 1234
+  # JPA / Hibernate 설정
+  # JPA - Java로 말하면 SQL로 번역시키는 애
+  # Hibernate - JPA의 통역기
+  jpa:
+      hibernate:
+        #테이블이 없다면 생성 + 기존 것 추가 및 수정하기 설정
+        # 예시)
+        #Member라는 클래스를 만든 뒤 @Entity을 붙이고
+        #private String mem_name을 만들었을 때,
+        #컬럼이 있다면 사용하고, 없다면 클래스명과 동일한 table에 해당 컬럼 생성
+        ddl-auto: update
+      #실행되는 SQL 쿼리를 콘솔창에 보여줘라
+      show-sql: true
+      properties:
+        hibernate:
+          #SQL을 여러줄로! (한줄 금지)
+          #SELECT * FROM member -> 안됨 x
+          #SELECT
+          # *
+          #FROM member -> 여러줄 가능 o
+          # false로 하면 한줄(false가 기본설정)
+          format_sql: true
+          #JPA가 쓸 DB 설정
+          #맨 위 datasource는 DB를 연결했을 뿐
+          #JPA는 어떤 DB를 번역해야할 지 모르기 때문
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+      # 서버 포트 설정(기본포트번호는 8080)
+      # 사실 안써도 됨
+      server:
+        port: 8080
