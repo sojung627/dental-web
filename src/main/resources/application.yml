@@ -33,5 +33,5 @@ spring:
           dialect: org.hibernate.dialect.PostgreSQLDialect
       # 서버 포트 설정(기본포트번호는 8080)
       # 사실 안써도 됨
-      server:
-        port: 8080
+      #server:
+      #port: 8080

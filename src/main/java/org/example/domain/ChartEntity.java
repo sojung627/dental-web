@@ -17,7 +17,7 @@ public class ChartEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, name = "chart_idx")
-    private Long chart_idx;
+    private Long chartIdx;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(nullable = false, name = "app_idx")

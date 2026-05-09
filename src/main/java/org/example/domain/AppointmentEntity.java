@@ -35,10 +35,6 @@ public class AppointmentEntity {
     // 현재시간을 DB에 저장
     @Column(nullable = false, name = "app_date")
     private LocalDate appDate;
-    @PrePersist
-    public void prepersist() {
-        this.appDate = LocalDate.now();
-    }
 
     @Column(nullable = false, length = 5, name = "app_time")
     private String appTime;
@@ -49,10 +45,6 @@ public class AppointmentEntity {
     // 현재 시간을 DB에 저장(날짜만) == SYSDATE
     @Column(name = "app_regdate")
     private LocalDate appRegDate;
-    @PrePersist
-    public void prePersist() {
-        this.appRegDate = LocalDate.now();
-    }
 
     // 체크 제약
     @Enumerated(EnumType.STRING)
